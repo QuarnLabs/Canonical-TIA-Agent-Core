@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "canonical-tia-core"
+version = "0.1.0"
+description = "Canonical TIA Agent Core and Interface-AI benchmark reference implementation"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Adam Kotecki"}]
+dependencies = ["numpy>=1.24"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
